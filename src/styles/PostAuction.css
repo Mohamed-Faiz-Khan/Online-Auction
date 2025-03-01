@@ -1,0 +1,78 @@
+.post-auction {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa; /* Light background */
+  min-height: calc(100vh - 120px); /* ✅ Ensures footer stays at the bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* ✅ Centers form properly */
+  margin-top: 20px;
+}
+
+.post-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1rem;
+  color: #d9534f;
+  margin-bottom: 15px;
+}
+
+.form-container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  flex-grow: 1; /* ✅ Pushes footer down */
+}
+
+.post-auction form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-auction input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.post-auction input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.post-auction button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.post-auction button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+}
+
+/* ✅ Responsive Fix */
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
