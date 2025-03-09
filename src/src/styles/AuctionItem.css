@@ -1,0 +1,85 @@
+.auction-item {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  border-radius: 10px;
+  max-width: 600px; /* ✅ Prevents header overflow */
+  word-wrap: break-word; /* ✅ Prevents long words from breaking layout */
+  overflow: hidden;
+}
+
+.auction-item h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.auction-item img {
+  width: 100%;
+  max-height: 250px; /* ✅ Prevents large images from overflowing */
+  object-fit: contain; /* ✅ Ensures the entire image fits without distortion */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.auction-item p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* ✅ Input and button container for better alignment */
+.bid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bid-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.bid-container button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.bid-container button:hover {
+  background: #218838;
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .auction-item {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .auction-item h2 {
+    font-size: 1.6rem;
+  }
+
+  .bid-container input, .bid-container button {
+    font-size: 0.9rem;
+  }
+}
